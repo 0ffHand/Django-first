@@ -7,6 +7,12 @@
 <body>
 
 <h1>Hello, this is My page</h1>
+    {% for book in query_set %}
+        {{book}}<br>
+    {% endfor %}
+<br><hr>
+
+{{ query_set }}
 
 </body>
 </html>
