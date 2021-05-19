@@ -8,7 +8,9 @@
 
 <h1>Hello, this is My page</h1>
     {% for book in query_set %}
-        {{book}}<br>
+        {{book.title }}<br>
+        {{book.text }}<br>
+        {{book.date_publish }}<br><br>
     {% endfor %}
 <br><hr>
 
