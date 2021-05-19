@@ -9,9 +9,10 @@
 <h1>Hello, this is My page</h1><hr><br>
 
     {% for book in books %}
-        {{book.title }}<br>
-        {{book.text }}<br>
-        {{book.date_publish }}<br><br>
+        <a href="{% url 'book-detail' book_id=book.id%}">{{ book.title }}</a><br>
+        {{ book.text }}<br>
+    <i> {{ book.author }}</i><br>
+        {{ book.date_publish|date:"d-m-Y" }}<br><br>
     {% endfor %}
 
 
