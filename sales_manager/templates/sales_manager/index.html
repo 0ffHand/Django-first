@@ -6,15 +6,14 @@
 </head>
 <body>
 
-<h1>Hello, this is My page</h1>
-    {% for book in query_set %}
+<h1>Hello, this is My page</h1><hr><br>
+
+    {% for book in books %}
         {{book.title }}<br>
         {{book.text }}<br>
         {{book.date_publish }}<br><br>
     {% endfor %}
-<br><hr>
 
-{{ query_set }}
 
 </body>
 </html>
